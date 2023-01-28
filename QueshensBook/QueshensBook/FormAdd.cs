@@ -51,7 +51,7 @@ namespace QueshensBook
             if (qusen.Zag != null && qusen.Opis != null && qusen.Sloth != 0)
             {
                 InnerQusen.qusens.Add(qusen);
-                using (FileStream Fill=new FileStream("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json", FileMode.OpenOrCreate))
+                using (FileStream Fill=new FileStream("SaveQue.json", FileMode.OpenOrCreate))
                 {
                     await JsonSerializer.SerializeAsync<List<Qusen>>(Fill, InnerQusen.qusens);
                 }

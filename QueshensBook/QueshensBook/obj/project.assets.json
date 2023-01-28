@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\StudentApple\\Desktop\\QueshensBook\\QueshensBook\\QueshensBook.csproj",
+      "projectUniqueName": "C:\\Users\\StudentApple\\Source\\Repos\\TikhonkovPetr\\QueshenBook\\QueshensBook\\QueshensBook\\QueshensBook.csproj",
       "projectName": "QueshensBook",
-      "projectPath": "C:\\Users\\StudentApple\\Desktop\\QueshensBook\\QueshensBook\\QueshensBook.csproj",
+      "projectPath": "C:\\Users\\StudentApple\\Source\\Repos\\TikhonkovPetr\\QueshenBook\\QueshensBook\\QueshensBook\\QueshensBook.csproj",
       "packagesPath": "C:\\Users\\StudentApple\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\StudentApple\\Desktop\\QueshensBook\\QueshensBook\\obj\\",
+      "outputPath": "C:\\Users\\StudentApple\\Source\\Repos\\TikhonkovPetr\\QueshenBook\\QueshensBook\\QueshensBook\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Soft\\Microsoft Visual Studio\\Shared\\NuGetPackages"

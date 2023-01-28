@@ -185,8 +185,8 @@ namespace QueshensBook
             {
                 listBox1.Items.Add(qusen);
             }
-            File.Delete("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json");
-            using (FileStream Fill = new FileStream("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json", FileMode.OpenOrCreate))
+            File.Delete("SaveQue.json");
+            using (FileStream Fill = new FileStream("SaveQue.json", FileMode.OpenOrCreate))
             {
                 await JsonSerializer.SerializeAsync<List<Qusen>>(Fill, InnerQusen.qusens);
             }

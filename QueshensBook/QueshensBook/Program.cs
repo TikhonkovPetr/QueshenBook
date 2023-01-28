@@ -14,21 +14,21 @@ namespace QueshensBook
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            if (File.Exists("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json"))
+            if (File.Exists("SaveQue.json"))
             {
-                using (FileStream Fill = new FileStream("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json", FileMode.Open))
+                using (FileStream Fill = new FileStream("SaveQue.json", FileMode.Open))
                 {
                     var mas = JsonSerializer.Deserialize<List<Qusen>>(Fill);
                     if (mas != null)
                         foreach (Qusen qq in mas)
                         {
-                            InnerQusen.qusens.Add(qq);
+                            InnerQusen.qusens.Add(qq);   
                         }
                 }
             }
             else
             {
-                using (FileStream Fill = new FileStream("C:\\Users\\StudentApple\\Desktop\\QueshensBook\\SaveQue.json", FileMode.OpenOrCreate))
+                using (FileStream Fill = new FileStream("SaveQue.json", FileMode.OpenOrCreate))
                 {
                     List<Qusen> qq=new List<Qusen> { };
                     JsonSerializer.Serialize(Fill, qq);
